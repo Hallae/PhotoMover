@@ -37,7 +37,7 @@ namespace PhotoMover
                     string destinationFilePath = Path.Combine(destinationDirectory, fileNameWithoutExt + Path.GetExtension(filePath));
                     if (File.Exists(destinationFilePath))
                     {
-                        Console.WriteLine($"Duplicate file found: {fileNameWithoutExt}. Skipping.");
+                        Console.WriteLine($"Duplicate file found: {fileNameWithoutExt}. Skipped.");
                         continue; // Skip this iteration
                     }
 
